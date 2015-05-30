@@ -19,18 +19,18 @@ use yii\bootstrap\Modal;
     ]
 )?>
 
-<? SecondWidget::begin() ?>
+<?php SecondWidget::begin() ?>
     Этот текст сделаем красным.
-<? SecondWidget::end() ?>
+<?php SecondWidget::end() ?>
 
-<?
-Modal::begin([
-'header' => '<h2>Превед Мир!!!</h2>',
-'toggleButton' => ['label' => 'click me'],
-]);
+<?php
+    Modal::begin([
+        'header' => '<h2>Превед Мир!!!</h2>',
+        'toggleButton' => ['label' => 'нажми'],
+        ]);
 
-echo 'Контент модального окна';
+        echo 'Контент модального окна';
 
-Modal::end();
+    Modal::end();
 ?>
 
